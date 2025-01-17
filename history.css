@@ -48,20 +48,24 @@ header{
 } 
 
 .col-4 img {
-  border-radius: 40px;
-  width: 85%; 
-  height: 100%;  
-  margin-left: 222%;
-  top: -50%;
-  position: relative;
-  margin-top: -25%;
+    
+    border-radius: 40px;
+    width: 90%; 
+    height: 100%;  
+    margin-left: 200%;
+    top: -100%;
+    position: relative;
+    margin-top: -20%;
+    top: -70%;
+   
 }
 
-.col-8{
-  margin-right: 10%;
-  margin-top: 15%;
+.col-8 {
+   margin-right: 10%;
+   margin-top: 25%;
+ 
 }
-.col-8 h1 {
+.sub-title {
   font-size: 60px;
   font-weight: 600;
   color: rgb(255, 252, 242);
@@ -69,10 +73,11 @@ header{
  
 }
 
-.col-8 p {
-  font-size: 25px;
+#text {
+  font-size: 15px;
   font-family:  Arial, sans-serif;
   color: rgb(255, 252, 242);
+  align-items: end;
 }
 
 
@@ -190,3 +195,10 @@ header{
     line-height: 1.8;
     color: rgb(37, 36, 34);
   }
+
+#title{
+  color: rgb(37, 36, 34);
+  font-weight: bold;
+  margin: 5%;
+
+}
