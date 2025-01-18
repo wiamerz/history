@@ -72,13 +72,13 @@
         <div class="container-fluid">
             <div class="row justify-content-start">
                 
-                <div class="col-8">
+                <div class="col-8 top">
                     <h1 class="sub-title" >Our history</h1>
                     <p id="text">Our journey began with a passion for innovation and amission to create impactful solutions. Since day one, we've been turning ideas into reality, one project at a time.
                     </p>
       
                 </div>
-                <div class="col-4">
+                <div class="col-4 image">
                      <img id="scrollImage" src="images/Mehr Erfolg des eigenen Business.jpeg" class="Scroll Image" >
                 </div>
             </div>
@@ -86,10 +86,11 @@
     </div>
        
 
+
     
 <div id="experience">
     <div class="container">
-        <h1>Our history</h1>
+        <h1> Our history</h1>
        
         <div class="exp-list"> 
          
@@ -130,8 +131,10 @@
 
 
 
+
+
 <h1 id="title">Our Journey Unfolded: Navigate Through the Milestones</h1>
-<div class="Creation" >
+<div class="Creation" id="a">
     <div class="Creation-image" id="one">
       <img src="images/start.jpeg">
     </div>
@@ -147,7 +150,7 @@
     </div>
 </div>
 
-<div class="Creation">
+<div class="Creation" id="b">
     <div class="Creation-image" id="two">
       <img src="images/client.jpeg">
     </div>
@@ -163,7 +166,7 @@ Cette première réussite a donné à l'équipe un élan supplémentaire pour po
     </div>
 </div>
 
-<div class="Creation">
+<div class="Creation" id="c">
     <div class="Creation-image" id="three">
       <img src="images/2021.jpeg">
     </div>
@@ -183,7 +186,83 @@ Cette première réussite a donné à l'équipe un élan supplémentaire pour po
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>     
-    <script src="history.js"></script>
+    <script src="/history.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> 
+
+
+    <script>
+
+        gsap.registerPlugin(ScrollTrigger);
+      
+        // Animate the image with scroll
+        gsap.from(".image", {
+          y: 100, 
+          opacity: 0.7, 
+          duration: 2, 
+          ease: "power2.out", 
+          scrollTrigger: {
+            trigger: ".image", 
+            start: "top 100%", 
+            end: "top 20%", 
+            scrub: true, 
+            toggleActions: "play reverse play reverse",  
+          },
+        });
+         
+    
+    gsap.from("#a", {
+      x: "100vh", 
+      opacity: 0.7, 
+      duration: 2, 
+      ease: "power2.out", 
+      scrollTrigger: {
+        trigger: "#a", 
+        start: "top 90%", 
+        end: "top 20%", 
+        scrub: true, 
+        toggleActions: "play reverse play reverse", 
+      },
+    });
+
+        gsap.registerPlugin(ScrollTrigger);
+      
+        
+        gsap.from("#b", {
+          x: "-100vh", 
+          opacity: 0.7, 
+          duration: 2, 
+          ease: "power2.out", 
+          scrollTrigger: {
+            trigger: "#b", 
+            start: "top 90%", 
+            end: "top 20%", 
+            scrub: true, 
+            toggleActions: "play reverse play reverse", 
+          },
+        });
+
+        
+    gsap.registerPlugin(ScrollTrigger);
+  
+    
+    gsap.from("#c", {
+      x: "100vh", 
+      opacity: 0.7, 
+      duration: 2, 
+      ease: "power2.out", 
+      scrollTrigger: {
+        trigger: "#c", 
+        start: "top 100%", 
+        end: "top 20%", 
+        scrub: true, 
+        toggleActions: "play reverse play reverse", 
+      },
+    });
+</script>
+
 
 </body>
-</html>
+</html>t>
+        
