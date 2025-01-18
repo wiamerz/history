@@ -202,3 +202,173 @@ header{
   margin: 5%;
 
 }
+
+
+
+/* section five */
+
+#sectionFive{
+  background-color: rgb(255, 252, 242);
+  color:rgb(37, 36, 34) ;
+}
+
+#sectionFiveButton{
+  background-color: rgb(37, 36, 34);
+  color: rgb(255, 252, 242);
+}
+
+#sectionFiveButton:hover{
+  background-color: rgb(64, 61, 57);
+  color: rgb(235, 94, 40);
+}
+
+
+
+/* footer */
+
+footer{
+  background-color: rgb(37, 36, 34);
+}
+
+footer p{
+  font-size: clamp(15px, 1vw, 40px);
+  line-height: 1.2;
+  margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General responsive adjustments */
+@media screen and (max-width: 768px) {
+  /* First section adjustments */
+  #about {
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .top {
+    margin-right: 0;
+    margin-top: 10%;
+    padding: 0 20px;
+    width: 100%;
+  }
+
+  .sub-title {
+    font-size: 36px;
+    text-align: center;
+  }
+
+  #text {
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  #scrollImage {
+    margin-left: 0;
+    margin-top: 20px;
+    width: 90%;
+    height: auto;
+    position: static;
+    display: block;
+    margin: 20px auto;
+  }
+
+  /* Second section adjustments */
+  .exp-list {
+    grid-template-columns: 1fr;
+    padding: 0 20px;
+  }
+
+  .exp img {
+    width: 100%;
+    height: auto;
+  }
+
+  .layer p {
+    font-size: 150%;
+  }
+
+  /* Third section adjustments */
+  .Creation {
+    flex-direction: column;
+    margin: 20px;
+    padding: 15px;
+  }
+
+  .Creation-image img {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .Creation-text {
+    padding: 15px 0;
+  }
+
+  .Creation h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  #title {
+    font-size: 24px;
+    text-align: center;
+    margin: 30px 20px;
+  }
+
+  /* Footer adjustments */
+  footer img {
+    width: 100px;
+  }
+
+  footer .gap-5 {
+    gap: 2rem !important;
+  }
+
+  footer .fs-1 {
+    font-size: 1.5rem !important;
+  }
+}
+
+/* Additional adjustments for extra small screens */
+@media screen and (max-width: 480px) {
+  .sub-title {
+    font-size: 28px;
+  }
+
+  .layer h3 {
+    font-size: 20px;
+  }
+
+  .layer p {
+    font-size: 120%;
+  }
+
+  .Creation h2 {
+    font-size: 20px;
+  }
+
+  .Creation p {
+    font-size: 14px;
+  }
+}
